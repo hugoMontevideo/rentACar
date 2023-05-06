@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de location</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/burger.js" defer></script>
+    <script src="assets/js/form.js" defer></script>
+</head>
+<body>
+    <header id="home">
+        <!-- <div class="burger"> -->
+            <button 
+                type="button" 
+                aria-label="toggle curtain navigation" 
+                class="nav-toggler">
+                <span class="line l1"></span>
+                <span class="line l2"></span>
+                <span class="line l3"></span>
+            </button>
+        <!-- </div> -->
+        <div class="layout-h1">
+            <h1>Bienvenue à bord</h1>
+            <p>Location de voiture 24h/24 et 7j/7</p>
+        </div>
+        
+        <form action="">
+            <div class="display">
+                <div class="container container-address">
+                    <div class="address">
+                        Adresse de départ 
+                        <img src="assets/img/icons/icons8-tri-decroissant.png" alt="icone flèche-bas" class="address-img">
+                    </div>    
+                    <input type="text" id="address" name="address" class="address none" placeholder="Ville de départ" required>
+                </div>
+                <div class="container date">
+                    <div class="start_loc">
+                        Début de location 
+                        <img src="assets/img/icon8-calendrier.png" class="start_loc-img" alt="icone de calendrier">
+                    </div>
+                    <input type="date" id="start_loc" class="start_loc none" placeholder="Date de début de location">
+                </div>
+                <div class="container date">
+                    <div class="end_loc">
+                        Fin de location 
+                        <img src="assets/img/icon8-calendrier.png" class="end_loc-img" alt="icone de calendrier" >
+                    </div>
+                    <input type="date" id="end_loc" class="end_loc none" placeholder="Date de fin de location">
+                </div>
+            </div>
+            <button type="submit" class="submit">Valider ma recherche</button>
+        </form>
+    </header>
+    <nav class="nav-curtain">
+        <a href="#home">Home</a>
+        <a href="#agence">Agence</a>
+        <a href="#footer">Footer</a>
+    </nav>
+
+    <main>
+        <section class="carroussel">
+            <div class="infos">
+                <p class="nb_resultats"></p>
+                <div class="filtre">
+                    Prix croissant <img src="assets/img/icons/icons8-tri-decroissant.png" alt="icone fleèhe-bas">
+                </div>
+            </div>
+
+            <div class="carroussel_div">
+                <div class="carroussel_img">
+                    <img src="assets/img/icons/icones8-fleche-gauche.png" alt="fleche vers l'arrière" class="before">
+                    <div class="img_voiture">
+                        <img src="assets/img/vehicule1.png" alt="voiture sélectionnée">
+                    </div>
+                    <img src="assets/img/icons/icons8-fleche-droite.png" alt="fleche vers l'avant" class="next">
+                </div>
+
+                <div class="marque desktop_display"><!-- display none en mobile et tablette -->
+                    <h1>Peugeot 208</h1>
+                    <p class="description">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km(0,5/km supplémentaire)</p>
+                    <p class="prix">999 - Agence de Paris</p>
+                    <button type="button" class="carroussel_button desktop_display">Réserver et payer</button>
+                </div>
+                <button type="button" class="carroussel_button desktop_none">Réserver et payer</button><!-- display none en desktop -->
+            </div>
+            <div class="marque desktop_none"><!-- display none en desktop -->
+                <h1>Peugeot 208</h1>
+                <p class="description">Diesel, 5 portes, GPS, AutoRadio, Forfait 1000km(0,5/km supplémentaire)</p>
+                <p class="prix">999 - Agence de Paris</p>
+            </div>
+        </section>
+        <span class="hr"></span>
+        <section id="agence" class="agence">
+            <div class="imageAgence">
+                <img src="assets/img/agence.jpg" alt="Agence de location">
+            </div>
+            <div class="agenceDescription">
+                <p>Notre Agence de <span class="ville">Paris</span></p>
+                <p class="adresse"></p>
+                <p class="horaires"></p>
+                <p class="phone"></p>
+                <p class="mail"></p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Agence de Location</p>
+        <p class="copyright">&copy; Simplon 2023</p>
+    </footer>
+    
+</body>
+</html>
